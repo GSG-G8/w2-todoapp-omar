@@ -1,0 +1,25 @@
+{
+  "name": "w2-todoapp-omar",
+  "version": "1.0.0",
+  "description": "Use TDD to build a To-do app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G8/w2-todoapp-omar.git"
+  },
+  "keywords": [
+    "TDD"
+  ],
+  "author": "omar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G8/w2-todoapp-omar/issues"
+  },
+  "homepage": "https://github.com/GSG-G8/w2-todoapp-omar#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
