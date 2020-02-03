@@ -1,0 +1,133 @@
+#add-todo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vmin;
+    height: 20vh;
+    background-color: #080;
+}
+
+#add-todo :nth-child(1), #add-todo :nth-child(2) {
+    position: absolute;
+    margin: 1vmin;
+    padding: 2vmin 2vmin;
+    
+    font: 3vmin "arial";
+    color: #000;
+    background-color: #fff;
+    
+    border: none;
+    border-radius: 1vmin;
+    box-sizing: border-box;
+}
+
+#add-todo :nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 98vmin;
+    box-shadow: inset 0.1em 0.1em 0.3em #000;
+}
+
+#add-todo :nth-child(2) {
+    right: 0;
+    top: 0;
+}
+
+
+#todo-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #666;
+}
+
+#todo-container::after {
+    content: "";
+    display: block;
+    z-index: -1;
+    background-color: #ccc;
+    box-shadow: inset 0.1em 0.1em 0.3em #000;
+}
+
+#todo-list {
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+}
+
+#todo-list, #todo-container::after {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vmin;
+    height: 80vh;
+}
+
+.todo-item {
+    position: relative;
+    display: block;
+
+    padding: 2vmin 8vmin;
+    margin: 1vmin;
+
+    font: 3vmin "arial";
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+.todo-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.todo-item {
+    box-shadow: 0.1em 0.1em 0.3em #000;
+    border-radius: 1vmin;
+}
+
+.btnDeleteTodo, .btnMarkTodo {
+    position: absolute;
+    top: 1vmin;
+    width: 5vmin;
+    height: 5vmin;
+    border: none;
+    border-radius: 1vmin;
+    color: #fff;
+    font-size: 4vmin;
+}
+.btnDeleteTodo {
+    right: 1vmin;
+    background-color: #f00;
+}
+.btnMarkTodo {
+    left: 1vmin;
+    background-color: #ccc;
+}
+.btnMarkTodo.done {
+    background-color: #080;
+}
+
+.btnDeleteTodo::before {
+    content: "\2717";
+    position: absolute;
+    left: 15%;
+    top: -5%;
+}
+
+.btnMarkTodo::before {
+    content: "\2713";
+    position: absolute;
+    left: 15%;
+    top: -5%;
+}
